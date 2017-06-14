@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>programacion orientada a objetos con javascript</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body{
+			width: 500px;
+			margin:  auto;
+		}
+		h1{
+			text-align: center;
+		}
+		canvas{
+			background: green;
+			border: dotted 1px yellow;
+		}
+		.selector{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>Manejo de filtros con canvas</h1>
+	<canvas id="canvas" width="500" height="300">
+		tu navegador no soporta html5
+	</canvas>
+	<div class="selector">
+		imagen:
+		<select id="archivo" >
+			<option value="">archivo</option>
+			<option value="imagen1.jpg">atenea</option>
+			<option value="imagen2.jpg">afordita</option>
+			<option value="imagen3.jpg">el beso</option>
+			<option value="imagen4.jpg">el grito</option>
+			<option value="imagen5.jpg">van gogh</option>
+		</select>		
+	</div>
+	<div class="selector">
+		filtro:
+		<select id="filtro" >
+			<option value="">filtro</option>
+			<option value="grises">grises</option>
+			<option value="negativo">negativo</option>
+			<option value="aclarar">aclarar</option>
+			<option value="oscurecer">Oscurecer</option>
+			<option value="flip">flip</option>
+		</select>		
+	</div>
+</body>
+<script src="app.js"></script>
+</html>
